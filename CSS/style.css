@@ -1,0 +1,69 @@
+hr {
+    background-color: rgb(255, 255, 255);
+      border-top: 2px dotted #8c8b8b;
+  }
+  
+  .footer{
+    background-color: rgb(255, 255, 255);
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+    vertical-align:bottom;
+  }
+
+  /* Contact form style */
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	/* font-smoothing:antialiased; */
+	text-rendering:optimizeLegibility;
+}
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background:rgb(255, 255, 255);
+}
+
+
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+.container {
+ float:left
+}
+
+td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+td p {
+	width: 100px;
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+	text-overflow: ellipsis;
+	margin: 0;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("./include/head") %>
+    <body>
+        <%- include ("./include/nav") %>
+        <div class="container">
+            <div class="row">
+                <h4>Home</h4>
+            </div>
+            
+            <div class="row">
+                <div class="row1" style="width: 600px;">Test</div>
+            </div>
+            <div class="row2">
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Faxie.wiki%2Fimages%2F4%2F4d%2F4193.gif&f=1&nofb=1" alt="" />
+            </div>
+            <div class="row3" style="width: max-content;">
+                <table class="table table-striped" id="listTable" >
+                    <thead class="thead-light">
+                        <th scope="col">Coin</th>
+                        <th scope="col">Price in USD$</th>
+                    </thead>
+                    <tbody>
+                        <tr><td><%= coins[0].coinId %></td> <td><%= coins[0].usd %></td></tr>
+                        <tr><td><%= coins[1].coinId %></td> <td><%= coins[1].usd %></td></tr>
+                        <tr><td><%= coins[2].coinId %></td> <td><%= coins[2].usd %></td></tr>
+                        <tr><td><%= coins[3].coinId %></td> <td><%= coins[3].usd %></td></tr>
+                        <tr><td><%= coins[4].coinId %></td> <td><%= coins[4].usd %></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>       
+        <%- include ("./include/footer") %>
+        <%- include ("./include/scripts") %>
+    </body>
+</html>
