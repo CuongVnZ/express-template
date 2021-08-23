@@ -18,7 +18,7 @@ module.exports.home_get = function (req, res) {
     })
 }
 
-module.exports.gallery_get = function (req, res) {
+module.exports.examplepage_get = function (req, res) {
     console.log('Request for `gallery` received');
     let list = new Array();
     fs.readdir("images/pictures/", function (err, files) {
@@ -28,6 +28,6 @@ module.exports.gallery_get = function (req, res) {
         files.forEach(function (file) {
             list.push(file);
         });
-        res.render('gallery', { list : list });
+        res.render('examplepage', { list : list });
     });
 }

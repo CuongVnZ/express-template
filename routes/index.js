@@ -4,6 +4,6 @@ const indexCon = require('../controllers/indexController');
 
 router.all('/', indexCon.home_get);
 
-router.get('/gallery', indexCon.gallery_get);
+router.get('/examplepage', indexCon.examplepage_get);
 
 module.exports = router;
