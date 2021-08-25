@@ -1,4 +1,4 @@
-# finger-counting
+# example-express
 ### An example website using express nodejs backend server
 
 
