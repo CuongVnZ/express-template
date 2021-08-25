@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("./include/head") %>
+    <body>
+        <%- include ("./include/nav") %>
+        <div class="container">
+            <div class="row">
+                <h4>Gallery</h4>
+            </div>       
+            <div class="row">
+                <% list.forEach(img => { %>
+                    <td><img style="max-width: 300px;" href="#" class="img-thumbnail" src="pictures/<%= img %>" />
+                <%  }) %> 
+            </div>   
+        </div>       
+        <%- include ("./include/footer") %>
+        <%- include ("./include/scripts") %>
+    </body>
+</html>

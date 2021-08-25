@@ -4,7 +4,7 @@ const fs = require('fs');
 
 module.exports.home_get = function (req, res) {
     console.log('Request for `home` received');
-    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=SuperFarm%2CEthereum%2Caxie-infinity%2Csmooth-love-potion%2Cbitcoin&vs_currencies=usd';
+    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=theta-token%2CEthereum%2Caxie-infinity%2Csmooth-love-potion%2Cbitcoin&vs_currencies=usd';
     axios.get(url).then(response => {
         var obj = response.data;
         let coins = {};
@@ -19,6 +19,11 @@ module.exports.home_get = function (req, res) {
 }
 
 module.exports.examplepage_get = function (req, res) {
+    console.log('Request for `example-page` received');
+    res.render('examplepage');
+}
+
+module.exports.gallery_get = function (req, res) {
     console.log('Request for `gallery` received');
     let list = new Array();
     fs.readdir("images/pictures/", function (err, files) {
@@ -28,6 +33,6 @@ module.exports.examplepage_get = function (req, res) {
         files.forEach(function (file) {
             list.push(file);
         });
-        res.render('examplepage', { list : list });
+        res.render('gallery', { list : list });
     });
 }
